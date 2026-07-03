@@ -1,0 +1,49 @@
+ *body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f2ea;
+  color: #2b1d13;
+}
+
+.site-header {
+  background: #85553f;
+  color: rgb(231, 222, 211);
+  padding: 16px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.navbar a {
+  color: rgba(223, 216, 214, 0.904);
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background: #d8a15d;
+  color: #2b1d13;
+}
+
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(rgba(43,29,19,0.55), rgba(43,29,19,0.55)), url('coffee-hero.jpg') center/cover no-repeat;
+  color: white;
+}
