@@ -169,3 +169,65 @@ h1 {
   display: block;      
   margin: 0 auto;      
 }
+earch-box {
+      text-align: center;
+      margin: 20px;
+    }
+    .search-box input {
+  padding: 14px 18px;
+  width: 70%;            
+  max-width: 500px;
+  border-radius: 8px;
+  border: 2px solid #d8a15d; 
+  font-size: 18px;
+  outline: none;
+  transition: box-shadow 0.3s ease;}
+
+    .highlight {
+      background-color: rgba(141, 106, 31, 0.856);
+      animation: fade 1s infinite alternate;
+    }
+    @keyframes fade {
+      from { background-color: rgb(134, 112, 37); }
+      to { background-color: rgb(117, 91, 43); }
+    }
+    /* Plugin styling */
+    .map, .social {
+      margin: 30px 0;
+      text-align: center;
+    }
+    .menu {
+      display: grid;
+      gap: 20px;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 12px;
+      background: rgb(231, 219, 219);
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .item img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .name {
+      font-weight: bold;
+      margin: 0 0 4px 0;
+    }
+    .price {
+      color: #b8834b;
+      font-weight: bold;
+    }
+   .btn{
+      background-color: #6b4f2d;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
