@@ -23,5 +23,52 @@
       <a href="about.html" class="btn" onclick="addToCart('Espresso')">Add to Cart</a>
   </div>
     </div>
+    <div class="coffee-card">
+      <img src="brown-coffe (1).jpeg" alt="Cappuccino" class="coffee-image">
+      <h2>Cappuccino</h2>
+      <p>Equal parts espresso, steamed milk, and foam.</p>
+      <p><em>Best method: Espresso + steam wand</em></p>
+    <a href="about.html" class="btn" onclick="addToCart('Cappuccino')">Add to Cart</a>
+    </div>
+    <div class="coffee-card">
+      <img src="fresh-coffe.jpeg" alt="Latte" class="coffee-image">
+      <h2>Latte</h2>
+      <p>Creamy espresso with steamed milk and foam.</p>
+      <p><em>Best method: Espresso + milk frother</em></p>
+      <a href="about.html" class="btn" onclick="addToCart('Latte')">Add to Cart</a>
+    </div>
+    <div class="coffee-card">
+      <img src="cream-coffe.jpeg" alt="Mocha" class="coffee-image">
+      <h2>Mocha</h2>
+      <p>Espresso blended with chocolate and milk.</p>
+      <p><em>Best method: Espresso + chocolate syrup</em></p>
+      <a href="about.html" class="btn" onclick="addToCart('Mocha')">Add to Cart</a>
+    </div>
+  </div>
+
+  <div class="map">
+    <h2>Find Us</h2>
+  </div>
+  
+  <div class="social">
+    <h2>Follow Us on Instagram @GADI coffeehouse</h2>
+  </div>
+
+  <script>
+    document.getElementById("searchInput").addEventListener("keyup", function() {
+      let filter = this.value.toLowerCase();
+      let cards = document.querySelectorAll(".coffee-card");
+      cards.forEach(card => {
+        let text = card.innerText.toLowerCase();
+        if(text.includes(filter)) {
+          card.style.display = "";
+          card.classList.add("highlight");
+        } else {
+          card.style.display = "none";
+          card.classList.remove("highlight");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
