@@ -73,6 +73,21 @@
         <div class="price">MK 2,500</div>
       </div>
     </div>
-  </div>
+<section class="cart">
+  <h2>Your Shopping Cart</h2>
+  <ul id="cartItems"></ul>
+  <button onclick="checkout()">Proceed to Checkout</button>
+</section>
+
+<script>
+  let cart = [];
+  function addToCart(item) {
+    cart.push(item);
+    document.getElementById("cartItems").innerHTML = cart.join("<br>");
+  }
+  function checkout() {
+    alert("Checkout process coming soon!");
+  }
+</script>
 </body>
 </html>
