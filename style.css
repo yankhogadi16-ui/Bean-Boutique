@@ -110,15 +110,15 @@
     padding: 20px;
     margin-top: 20px;
 }
-    h1 {
+.h1 {
       color: #6b4f2d;
     }
-    .equipment-list {
+.equipment-list {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
     }
-    .equipment-item {
+.equipment-item {
       background: #fff;
       border: 1px solid #ddd;
       border-radius: 8px;
@@ -126,30 +126,30 @@
       width: 250px;
       box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
     }
-    .equipment-item img {
+.equipment-item img {
       width: 100%;
       border-radius: 6px;
     }
-    .equipment-item h3 {
+.equipment-item h3 {
       margin-top: 10px;
       color: #333;
     }
-    .equipment-item p {
+.equipment-item p {
       font-size: 14px;
       line-height: 1.4;
     }
   
-    h1 {
+h1 {
       color: #fff;
       text-align: center;
     }
-    .catalogue {
+.catalogue {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       margin-top: 20px;
     }
-    .coffee-card {
+.coffee-card {
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.2);
@@ -157,10 +157,11 @@
       text-align: center;
       transition: transform 0.3s;
     }
-    .coffee-card:hover {
+    
+.coffee-card:hover {
       transform: scale(1.05);
     }
-    .coffee-image {
+.coffee-image {
   width: 100%;          
   max-width: 200px;    
   height: auto;         
