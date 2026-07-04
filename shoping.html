@@ -20,3 +20,48 @@
       <li><strong>Espresso Mastery</strong>  July 15, 2026</li>
       <li><strong>Meet the Roaster</strong>  July 20, 2026</li>
     </ul>
+    <form action="mailto:info@beanboutique.com" method="post" class="registration-form">
+      <input type="text" name="fname" placeholder="First Name" required>
+      <input type="text" name="lname" placeholder="Last Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <select name="workshop" required>
+        <option value="">Select Workshop</option>
+        <option value="latte">Latte Art Class</option>
+        <option value="espresso">Espresso Mastery</option>
+        <option value="roaster">Meet the Roaster</option>
+      </select>
+
+      <button type="submit"> <a href="coffe.html" class="register-link">Register</button>
+      <p class="form-note"> You will receive a confirmation email after registration.</p>
+    </form>
+  </section>
+
+  <section class="countdown">
+    <h2>Next Event Starts In:</h2>
+    <p id="timer"></p>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Bean Boutique Coffee Shop</p>
+  </footer>
+
+  <script>
+    const eventDate = new Date("July 10, 2026 10:00:00").getTime();
+    const timer = document.getElementById("timer");
+
+    setInterval(function() {
+      let now = new Date().getTime();
+      let distance = eventDate - now;
+
+      let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      timer.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+      if (distance < 0) {
+        timer.innerHTML = "Event Started!";
+      }
+    }, 1000);
+  </script>
