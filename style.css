@@ -3,6 +3,7 @@
   font-family: Arial, sans-serif;
   background: #f7f2ea;
   color: #2b1d13;
+  min-height: 100vh;
 }
 
 .site-header {
@@ -307,9 +308,9 @@ earch-box {
     border-radius: 5px;
     cursor: pointer;
 }
-    header {
+ header {
       background-color: #6b4226;
       color: white;
       text-align: center;
       padding: 20px;
-    }
+ }
