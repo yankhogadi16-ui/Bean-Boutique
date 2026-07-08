@@ -30,8 +30,7 @@
         <option value="espresso">Espresso Mastery</option>
         <option value="roaster">Meet the Roaster</option>
       </select>
-
-      <button type="submit"> <a href="coffe.html" class="register-link">Register</button>
+  <button type="submit" class="register-link">Register</button>
       <p class="form-note"> You will receive a confirmation email after registration.</p>
     </form>
   </section>
@@ -45,23 +44,4 @@
     <p>&copy; 2026 Bean Boutique Coffee Shop</p>
   </footer>
 
-  <script>
-    const eventDate = new Date("July 10, 2026 10:00:00").getTime();
-    const timer = document.getElementById("timer");
-
-    setInterval(function() {
-      let now = new Date().getTime();
-      let distance = eventDate - now;
-
-      let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      timer.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-      if (distance < 0) {
-        timer.innerHTML = "Event Started!";
-      }
-    }, 1000);
-  </script>
+  <script src="script.js"></script>

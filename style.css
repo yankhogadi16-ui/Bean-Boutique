@@ -3,7 +3,6 @@
   font-family: Arial, sans-serif;
   background: #f7f2ea;
   color: #2b1d13;
-  min-height: 100vh;
 }
 
 .site-header {
@@ -314,3 +313,56 @@ earch-box {
       text-align: center;
       padding: 20px;
  }
+@media (max-width: 768px) {
+  .coffee-image, .small-img {
+    max-width: 180px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .cards, .catalogue, .menu {
+    padding: 15px;
+    gap: 10px;
+  }
+  .site-footer {
+    margin-top: 10px;
+  }
+}
+.site-footer {
+  background: #85553f;
+  color: #f7f2ea;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.site-footer .social-links a {
+  color: #f7f2ea;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.site-footer .social-links a:hover {
+  color: #d8a15d;
+}
+.social-links a {
+  color: #85553f;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.social-links a:hover {
+  color: #d8a15d;
+}
+.hero-Section {
+  background-color: #e0e0e0; /* light grey */
+  padding: 40px;
+  text-align: center;
+}
+.hero-Section h2, 
+.hero-Section p {
+  color: #2b1d13; /* dark coffee brown for contrast */
+}
