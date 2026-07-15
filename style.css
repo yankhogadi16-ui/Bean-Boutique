@@ -169,7 +169,7 @@ h1 {
   display: block;      
   margin: 0 auto;      
 }
-earch-box {
+.search-box {
       text-align: center;
       margin: 20px;
     }
@@ -191,7 +191,7 @@ earch-box {
       from { background-color: rgb(134, 112, 37); }
       to { background-color: rgb(117, 91, 43); }
     }
-    /* Plugin styling */
+    
     .map, .social {
       margin: 30px 0;
       text-align: center;
