@@ -6,7 +6,7 @@
 }
 
 .site-header {
-  background: #85553f;
+  background: #0c0705;
   color: rgb(231, 222, 211);
   padding: 16px;
 }
@@ -129,6 +129,7 @@
 .equipment-item img {
       width: 100%;
       border-radius: 6px;
+      height: 400px;
     }
 .equipment-item h3 {
       margin-top: 10px;
@@ -156,15 +157,16 @@ h1 {
       padding: 15px;
       text-align: center;
       transition: transform 0.3s;
+      height: 100%;
     }
     
 .coffee-card:hover {
       transform: scale(1.05);
     }
-.coffee-image {
+.coffee-card img {
   width: 100%;          
   max-width: 200px;    
-  height: auto;         
+  height: 200px;
   border-radius: 8px;   
   display: block;      
   margin: 0 auto;      
@@ -191,7 +193,7 @@ h1 {
       from { background-color: rgb(134, 112, 37); }
       to { background-color: rgb(117, 91, 43); }
     }
-    
+
     .map, .social {
       margin: 30px 0;
       text-align: center;
@@ -329,7 +331,7 @@ h1 {
   }
 }
 .site-footer {
-  background: #85553f;
+  background: #1f1a18;
   color: #f7f2ea;
   text-align: center;
   padding: 20px;
@@ -366,3 +368,31 @@ h1 {
 .hero-Section p {
   color: #2b1d13; /* dark coffee brown for contrast */
 }
+footer {
+  background-color: #161311; /* dark coffee brown */
+  color: #f7f2ea; /* light cream for contrast */
+  text-align: center;
+  padding: 20px;
+}
+.item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
