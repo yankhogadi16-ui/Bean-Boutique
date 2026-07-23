@@ -1,22 +1,30 @@
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(name, price) {
-  cart.push({ name, price });
-  updateCart();
+    cart.push({ name, price });
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert(name + " added to cart");
 }
 
-function updateCart() {
-  const cartItems = document.getElementById("cartItems");
-  cartItems.innerHTML = "";
+function displayCart() {
+    const cartItems = document.getElementById("cartItems");
+    const cartTotal = document.getElementById("cartTotal");
 
-  let total = 0;
+    if (!cartItems || !cartTotal) return;
 
-  cart.forEach(item => {
-    const li = document.createElement("li");
-    li.textContent = `${item.name} - MK ${item.price}`;
-    cartItems.appendChild(li);
-    total += item.price;
-  });
+    let total = 0;
+    cartItems.innerHTML = "";
 
-  document.getElementById("cartTotal").textContent = `Total: MK ${total}`;
+    cart.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = `${item.name} - MK ${item.price}`;
+        cartItems.appendChild(li);
+        total += item.price;
+    });
+
+    cartTotal.textContent = `Total: MK ${total}`;
 }
+
+window.onload = displayCart;
